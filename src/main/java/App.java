@@ -26,6 +26,17 @@ public class App {
         }
         return factors;
 	}
+	public void printPrimeFactors(long number,long n2){
+		int n = number;
+        List<Integer> factors = new ArrayList<Integer>();
+        for (int i = n; i <= n2; i++) {
+            while (n % i == 0) {
+                factors.add(i);
+                n /= i;
+            }
+        }
+        return factors;
+	}
 	
 
     public static void main(String[] args) {
