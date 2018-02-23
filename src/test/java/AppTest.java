@@ -5,6 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
+<<<<<<< HEAD
     @Test 
 	public void testSmallPrime() {
         App appObj = new App();
@@ -24,5 +25,10 @@ public class AppTest {
 	public void testLargeNoPrime() {
         App appObj = new App();
         assertEquals(appObj.isPrime(32416189051L),false);
+=======
+    @Test public void testAppHasAGreeting() {
+        App classUnderTest = new App();
+        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+>>>>>>> master
     }
 }
