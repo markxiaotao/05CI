@@ -16,12 +16,15 @@ public class App {
 		return true;
 	}
 	public void printPrimeFactors(long number){
-		for (int i = 2; i <= n; i++) {
+		int n = number;
+        List<Integer> factors = new ArrayList<Integer>();
+        for (int i = 2; i <= n; i++) {
             while (n % i == 0) {
-                System.out.println(i);
+                factors.add(i);
                 n /= i;
             }
         }
+        return factors;
 	}
 	
 
@@ -38,6 +41,6 @@ public class App {
 			System.exit(0);
 		}
 		input =Long.parseLong(args[0]);
-		printPrimeFactors(input);
+		System.out.println(printPrimeFactors(input));
     }
 }
